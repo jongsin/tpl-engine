@@ -14,9 +14,10 @@ type Yet struct {
 }
 
 const (
-	Version = "0.0.1"
-	website = "https://yet.yoonit.id"
-	banner  = `
+	PathSeparator = string(os.PathSeparator)
+	Version       = "0.0.1"
+	website       = "https://yet.yoonit.id"
+	banner        = `
  __  __  ____  ______
  \ \/ / / __/ /_   _/
   \  / / _/    /  /
@@ -24,7 +25,6 @@ const (
 Easy use, fast development, Yoon Easy Template Engine
 %s
 `
-	PathSeparator = string(os.PathSeparator)
 )
 
 func New() (y *Yet) {
